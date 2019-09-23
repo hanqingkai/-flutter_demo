@@ -22,8 +22,10 @@ dependencies:
  
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
+  #  ^ 表示可以使用该包的小版本更新
   cupertino_icons: ^0.1.2
   intl: ^0.15.7
+  scoped_model: ^0.3.0  #直接使用部件的数据，不需要传递值的工具包  --传递数据工具包
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -1,6 +1,8 @@
 import "package:flutter/material.dart";
 import 'package:flutter_app/demo/form_demo.dart';
 import 'package:flutter_app/demo/material_components.dart';
+import 'package:flutter_app/demo/state/state_management_demo.dart';
+import 'package:flutter_app/demo/stream/stream_demo.dart';
 
 import 'demo/basic_demo.dart';
 import 'demo/bottom_navigation_bar_demo.dart';
@@ -20,13 +22,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // home: Home(),
       // home: NavigatorDemo(),
-      initialRoute: '/mdc',//要显示的界面内容
+      initialRoute: '/Stream',//要显示的界面内容
       routes: {
         // '/':(context)=>NavigatorDemo(),
         '/': (context) => Home(),
         '/about': (context) => Page(title: 'About'),
         '/form': (context) => FormDemo(),//表单
         '/mdc': (context) => MaterialComponents(),//组件
+        '/state-management': (context) => StateManagementDemo(),//小部件状态
+        '/Stream': (context) => StramDemo(),//流
       },
       // home: SliverDemo(),
       theme: ThemeData(//公共的主题
